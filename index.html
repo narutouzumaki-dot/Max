@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d1c">
+  <title>MAX Voice Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-dot"></span> MAX</div>
+      <span class="badge">LOCAL DEMO · NO API</span>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">YOUR PERSONAL VOICE ASSISTANT</p>
+      <h1>How can I help?</h1>
+      <p class="intro">English interface <span>•</span> Telugu voice</p>
+
+      <button id="listenButton" class="orb-button" type="button"
+              aria-label="Start Telugu voice recognition">
+        <span class="orb"><span class="mic">🎙</span></span>
+        <span class="listen-label">TAP TO SPEAK</span>
+      </button>
+
+      <p id="status" class="status" aria-live="polite">Ready when you are</p>
+      <div class="transcript-box">
+        <div class="box-label">WHAT MAX HEARD</div>
+        <p id="transcript">Your Telugu speech will appear here.</p>
+      </div>
+      <div class="response-box">
+        <div class="box-label">MAX RESPONSE</div>
+        <p id="response">Press the microphone and speak in Telugu.</p>
+      </div>
+    </section>
+
+    <section class="quick">
+      <div class="section-heading">
+        <h2>Try a command</h2>
+        <span>Telugu voice examples</span>
+      </div>
+      <div class="examples">
+        <button type="button" data-command="హలో మ్యాక్స్">Say hello</button>
+        <button type="button" data-command="సమయం ఎంత">Ask the time</button>
+        <button type="button" data-command="గూగుల్ తెరువు">Open Google</button>
+        <button type="button" data-command="యూట్యూబ్ తెరువు">Open YouTube</button>
+        <button type="button" data-command="ఆపు">Stop speaking</button>
+      </div>
+    </section>
+
+    <footer>
+      <span>MAX prototype</span>
+      <span>Speech recognition depends on browser support and may need internet.</span>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
